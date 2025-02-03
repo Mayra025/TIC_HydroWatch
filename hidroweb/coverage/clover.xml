@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1737350902399" clover="3.2.0">
+  <project timestamp="1737350902400" name="All files">
+    <metrics statements="443" coveredstatements="377" conditionals="194" coveredconditionals="118" methods="84" coveredmethods="67" elements="721" coveredelements="562" complexity="0" loc="443" ncloc="443" packages="13" files="14" classes="14"/>
+    <package name="CurrentWeather">
+      <metrics statements="38" coveredstatements="37" conditionals="7" coveredconditionals="6" methods="5" coveredmethods="5"/>
+      <file name="CurrentWeather.tsx" path="C:\Users\ALEXANDRA\Documents\GitHub\HidroWeb_2024A\hidroweb\src\componentes\CurrentWeather\CurrentWeather.tsx">
+        <metrics statements="38" coveredstatements="37" conditionals="7" coveredconditionals="6" methods="5" coveredmethods="5"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="6" type="stmt"/>
+        <line num="33" count="6" type="stmt"/>
+        <line num="34" count="6" type="stmt"/>
+        <line num="36" count="6" type="stmt"/>
+        <line num="37" count="3" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="50" count="6" type="stmt"/>
+        <line num="51" count="2" type="stmt"/>
+        <line num="52" count="2" type="stmt"/>
+        <line num="55" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="64" count="1" type="stmt"/>
+        <line num="69" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="70" count="3" type="stmt"/>
+        <line num="73" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="74" count="2" type="stmt"/>
+        <line num="77" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="78" count="0" type="stmt"/>
+        <line num="81" count="1" type="stmt"/>
+        <line num="82" count="1" type="stmt"/>
+        <line num="84" count="1" type="stmt"/>
+        <line num="111" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="FiveDayClimate">
+      <metrics statements="46" coveredstatements="34" conditionals="4" coveredconditionals="3" methods="8" coveredmethods="5"/>
+      <file name="FiveDayClimate.tsx" path="C:\Users\ALEXANDRA\Documents\GitHub\HidroWeb_2024A\hidroweb\src\componentes\FiveDayClimate\FiveDayClimate.tsx">
+        <metrics statements="46" coveredstatements="34" conditionals="4" coveredconditionals="3" methods="8" coveredmethods="5"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="23" count="5" type="stmt"/>
+        <line num="24" count="5" type="stmt"/>
+        <line num="26" count="5" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="40" count="5" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="46" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="60" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="61" count="3" type="stmt"/>
+        <line num="64" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="65" count="2" type="stmt"/>
+        <line num="68" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="74" count="0" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="101" count="0" type="stmt"/>
+        <line num="106" count="0" type="stmt"/>
+        <line num="131" count="1" type="stmt"/>
+        <line num="132" count="0" type="stmt"/>
+        <line num="133" count="0" type="stmt"/>
+        <line num="141" count="1" type="stmt"/>
+        <line num="149" count="1" type="stmt"/>
+        <line num="154" count="1" type="stmt"/>
+        <line num="164" count="1" type="stmt"/>
+        <line num="169" count="1" type="stmt"/>
+        <line num="176" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="Footer">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Footer.tsx" path="C:\Users\ALEXANDRA\Documents\GitHub\HidroWeb_2024A\hidroweb\src\componentes\Footer\Footer.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="FormC">
+      <metrics statements="56" coveredstatements="39" conditionals="48" coveredconditionals="30" methods="9" coveredmethods="5"/>
+      <file name="FormC.tsx" path="C:\Users\ALEXANDRA\Documents\GitHub\HidroWeb_2024A\hidroweb\src\componentes\FormC\FormC.tsx">
+        <metrics statements="56" coveredstatements="39" conditionals="48" coveredconditionals="30" methods="9" coveredmethods="5"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="164" count="1" type="stmt"/>
+        <line num="165" count="4" type="stmt"/>
+        <line num="166" count="4" type="cond" truecount="3" falsecount="1"/>
+        <line num="167" count="4" type="cond" truecount="3" falsecount="1"/>
+        <line num="168" count="4" type="cond" truecount="3" falsecount="1"/>
+        <line num="170" count="4" type="stmt"/>
+        <line num="176" count="4" type="stmt"/>
+        <line num="177" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="178" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="179" count="1" type="stmt"/>
+        <line num="180" count="1" type="stmt"/>
+        <line num="181" count="1" type="stmt"/>
+        <line num="182" count="1" type="stmt"/>
+        <line num="183" count="1" type="stmt"/>
+        <line num="189" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="190" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="191" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="192" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="193" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="195" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="200" count="1" type="stmt"/>
+        <line num="206" count="4" type="stmt"/>
+        <line num="208" count="2" type="cond" truecount="3" falsecount="0"/>
+        <line num="209" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="214" count="1" type="stmt"/>
+        <line num="219" count="4" type="stmt"/>
+        <line num="220" count="0" type="stmt"/>
+        <line num="221" count="0" type="stmt"/>
+        <line num="222" count="0" type="stmt"/>
+        <line num="224" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="226" count="0" type="stmt"/>
+        <line num="235" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="236" count="0" type="stmt"/>
+        <line num="237" count="0" type="stmt"/>
+        <line num="239" count="0" type="stmt"/>
+        <line num="240" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="241" count="0" type="stmt"/>
+        <line num="242" count="0" type="stmt"/>
+        <line num="245" count="0" type="stmt"/>
+        <line num="246" count="0" type="stmt"/>
+        <line num="249" count="4" type="stmt"/>
+        <line num="311" count="0" type="stmt"/>
+        <line num="315" count="20" type="stmt"/>
+        <line num="349" count="0" type="stmt"/>
+        <line num="352" count="16" type="stmt"/>
+        <line num="379" count="0" type="stmt"/>
+        <line num="495" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="FormL">
+      <metrics statements="27" coveredstatements="25" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="4"/>
+      <file name="FormL.tsx" path="C:\Users\ALEXANDRA\Documents\GitHub\HidroWeb_2024A\hidroweb\src\componentes\FormL\FormL.tsx">
+        <metrics statements="27" coveredstatements="25" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="4"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="8" type="stmt"/>
+        <line num="21" count="8" type="stmt"/>
+        <line num="22" count="8" type="stmt"/>
+        <line num="23" count="8" type="stmt"/>
+        <line num="24" count="8" type="stmt"/>
+        <line num="25" count="8" type="stmt"/>
+        <line num="26" count="8" type="stmt"/>
+        <line num="28" count="8" type="stmt"/>
+        <line num="30" count="8" type="stmt"/>
+        <line num="32" count="8" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="48" count="8" type="stmt"/>
+        <line num="98" count="2" type="stmt"/>
+        <line num="115" count="2" type="stmt"/>
+        <line num="146" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="FormR">
+      <metrics statements="41" coveredstatements="35" conditionals="21" coveredconditionals="12" methods="4" coveredmethods="2"/>
+      <file name="FormR.tsx" path="C:\Users\ALEXANDRA\Documents\GitHub\HidroWeb_2024A\hidroweb\src\componentes\FormR\FormR.tsx">
+        <metrics statements="41" coveredstatements="35" conditionals="21" coveredconditionals="12" methods="4" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
+        <line num="26" count="4" type="stmt"/>
+        <line num="27" count="4" type="stmt"/>
+        <line num="28" count="4" type="stmt"/>
+        <line num="30" count="4" type="stmt"/>
+        <line num="32" count="4" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="40" count="2" type="cond" truecount="4" falsecount="1"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="57" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="65" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="66" count="0" type="cond" truecount="0" falsecount="5"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="74" count="1" type="stmt"/>
+        <line num="78" count="4" type="stmt"/>
+        <line num="210" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="FormU">
+      <metrics statements="64" coveredstatements="57" conditionals="29" coveredconditionals="18" methods="10" coveredmethods="9"/>
+      <file name="FormU.tsx" path="C:\Users\ALEXANDRA\Documents\GitHub\HidroWeb_2024A\hidroweb\src\componentes\FormU\FormU.tsx">
+        <metrics statements="64" coveredstatements="57" conditionals="29" coveredconditionals="18" methods="10" coveredmethods="9"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="11" type="stmt"/>
+        <line num="22" count="11" type="stmt"/>
+        <line num="23" count="11" type="stmt"/>
+        <line num="24" count="11" type="stmt"/>
+        <line num="25" count="11" type="stmt"/>
+        <line num="26" count="11" type="stmt"/>
+        <line num="27" count="11" type="stmt"/>
+        <line num="29" count="11" type="stmt"/>
+        <line num="30" count="11" type="stmt"/>
+        <line num="31" count="11" type="stmt"/>
+        <line num="33" count="11" type="stmt"/>
+        <line num="34" count="11" type="stmt"/>
+        <line num="35" count="11" type="stmt"/>
+        <line num="36" count="11" type="cond" truecount="1" falsecount="0"/>
+        <line num="37" count="11" type="stmt"/>
+        <line num="38" count="11" type="stmt"/>
+        <line num="39" count="11" type="cond" truecount="1" falsecount="0"/>
+        <line num="40" count="11" type="stmt"/>
+        <line num="41" count="11" type="cond" truecount="1" falsecount="1"/>
+        <line num="42" count="11" type="cond" truecount="1" falsecount="1"/>
+        <line num="43" count="11" type="cond" truecount="1" falsecount="1"/>
+        <line num="44" count="11" type="cond" truecount="1" falsecount="1"/>
+        <line num="45" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="46" count="11" type="stmt"/>
+        <line num="54" count="11" type="stmt"/>
+        <line num="57" count="11" type="stmt"/>
+        <line num="58" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="63" count="11" type="stmt"/>
+        <line num="64" count="12" type="cond" truecount="3" falsecount="0"/>
+        <line num="66" count="11" type="stmt"/>
+        <line num="67" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="69" count="1" type="stmt"/>
+        <line num="70" count="1" type="stmt"/>
+        <line num="71" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="75" count="1" type="stmt"/>
+        <line num="76" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="78" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="82" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="83" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="86" count="1" type="stmt"/>
+        <line num="94" count="1" type="stmt"/>
+        <line num="98" count="0" type="stmt"/>
+        <line num="102" count="11" type="stmt"/>
+        <line num="103" count="1" type="stmt"/>
+        <line num="104" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="106" count="1" type="stmt"/>
+        <line num="108" count="0" type="stmt"/>
+        <line num="114" count="11" type="stmt"/>
+        <line num="158" count="1" type="stmt"/>
+        <line num="168" count="1" type="stmt"/>
+        <line num="179" count="1" type="stmt"/>
+        <line num="246" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="HistoricalChartForm">
+      <metrics statements="23" coveredstatements="14" conditionals="8" coveredconditionals="3" methods="9" coveredmethods="6"/>
+      <file name="HistoricalChartForm.tsx" path="C:\Users\ALEXANDRA\Documents\GitHub\HidroWeb_2024A\hidroweb\src\componentes\HistoricalChartForm\HistoricalChartForm.tsx">
+        <metrics statements="23" coveredstatements="14" conditionals="8" coveredconditionals="3" methods="9" coveredmethods="6"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="43" count="6" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="55" count="12" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="69" count="12" type="stmt"/>
+        <line num="104" count="1" type="stmt"/>
+        <line num="105" count="1" type="stmt"/>
+        <line num="106" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="107" count="1" type="stmt"/>
+        <line num="108" count="1" type="stmt"/>
+        <line num="110" count="0" type="stmt"/>
+        <line num="124" count="0" type="stmt"/>
+        <line num="125" count="0" type="stmt"/>
+        <line num="126" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="127" count="0" type="stmt"/>
+        <line num="128" count="0" type="stmt"/>
+        <line num="130" count="0" type="stmt"/>
+        <line num="181" count="0" type="stmt"/>
+        <line num="186" count="0" type="stmt"/>
+        <line num="204" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="LineChart">
+      <metrics statements="53" coveredstatements="44" conditionals="31" coveredconditionals="16" methods="9" coveredmethods="9"/>
+      <file name="LineChart.tsx" path="C:\Users\ALEXANDRA\Documents\GitHub\HidroWeb_2024A\hidroweb\src\componentes\LineChart\LineChart.tsx">
+        <metrics statements="53" coveredstatements="44" conditionals="31" coveredconditionals="16" methods="9" coveredmethods="9"/>
+        <line num="236" count="1" type="stmt"/>
+        <line num="237" count="1" type="stmt"/>
+        <line num="238" count="1" type="stmt"/>
+        <line num="239" count="1" type="stmt"/>
+        <line num="241" count="1" type="stmt"/>
+        <line num="252" count="1" type="stmt"/>
+        <line num="268" count="1" type="stmt"/>
+        <line num="269" count="4" type="stmt"/>
+        <line num="270" count="4" type="stmt"/>
+        <line num="271" count="4" type="stmt"/>
+        <line num="273" count="4" type="stmt"/>
+        <line num="274" count="2" type="cond" truecount="2" falsecount="1"/>
+        <line num="275" count="0" type="stmt"/>
+        <line num="276" count="0" type="stmt"/>
+        <line num="279" count="2" type="stmt"/>
+        <line num="280" count="2" type="stmt"/>
+        <line num="281" count="2" type="stmt"/>
+        <line num="282" count="2" type="stmt"/>
+        <line num="284" count="2" type="stmt"/>
+        <line num="287" count="1" type="stmt"/>
+        <line num="288" count="1" type="stmt"/>
+        <line num="289" count="1" type="stmt"/>
+        <line num="290" count="1" type="stmt"/>
+        <line num="293" count="1" type="stmt"/>
+        <line num="294" count="1" type="stmt"/>
+        <line num="295" count="1" type="stmt"/>
+        <line num="299" count="2" type="stmt"/>
+        <line num="302" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="303" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="305" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="309" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="313" count="1" type="stmt"/>
+        <line num="314" count="1" type="stmt"/>
+        <line num="316" count="1" type="cond" truecount="4" falsecount="1"/>
+        <line num="320" count="1" type="stmt"/>
+        <line num="321" count="1" type="cond" truecount="1" falsecount="3"/>
+        <line num="323" count="0" type="stmt"/>
+        <line num="325" count="1" type="stmt"/>
+        <line num="327" count="0" type="stmt"/>
+        <line num="329" count="0" type="stmt"/>
+        <line num="333" count="1" type="stmt"/>
+        <line num="335" count="1" type="stmt"/>
+        <line num="337" count="1" type="cond" truecount="3" falsecount="0"/>
+        <line num="338" count="1" type="stmt"/>
+        <line num="344" count="0" type="stmt"/>
+        <line num="350" count="1" type="cond" truecount="1" falsecount="3"/>
+        <line num="352" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="354" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="356" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="358" count="0" type="stmt"/>
+        <line num="369" count="1" type="stmt"/>
+        <line num="397" count="1" type="stmt"/>
+        <line num="400" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="LoginIllustration">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="LoginIllustration.styles.ts" path="C:\Users\ALEXANDRA\Documents\GitHub\HidroWeb_2024A\hidroweb\src\componentes\LoginIllustration\LoginIllustration.styles.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+      <file name="LoginIllustration.tsx" path="C:\Users\ALEXANDRA\Documents\GitHub\HidroWeb_2024A\hidroweb\src\componentes\LoginIllustration\LoginIllustration.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="Navbar">
+      <metrics statements="62" coveredstatements="59" conditionals="14" coveredconditionals="12" methods="17" coveredmethods="14"/>
+      <file name="Navbar.tsx" path="C:\Users\ALEXANDRA\Documents\GitHub\HidroWeb_2024A\hidroweb\src\componentes\Navbar\Navbar.tsx">
+        <metrics statements="62" coveredstatements="59" conditionals="14" coveredconditionals="12" methods="17" coveredmethods="14"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="38" count="24" type="cond" truecount="1" falsecount="1"/>
+        <line num="39" count="24" type="cond" truecount="1" falsecount="1"/>
+        <line num="67" count="1" type="stmt"/>
+        <line num="68" count="9" type="stmt"/>
+        <line num="69" count="8" type="stmt"/>
+        <line num="70" count="8" type="stmt"/>
+        <line num="71" count="8" type="stmt"/>
+        <line num="73" count="8" type="stmt"/>
+        <line num="74" count="8" type="stmt"/>
+        <line num="76" count="8" type="stmt"/>
+        <line num="77" count="5" type="stmt"/>
+        <line num="80" count="8" type="stmt"/>
+        <line num="81" count="8" type="stmt"/>
+        <line num="82" count="8" type="stmt"/>
+        <line num="83" count="8" type="cond" truecount="1" falsecount="0"/>
+        <line num="84" count="8" type="stmt"/>
+        <line num="85" count="8" type="stmt"/>
+        <line num="86" count="8" type="cond" truecount="1" falsecount="0"/>
+        <line num="87" count="8" type="stmt"/>
+        <line num="93" count="8" type="stmt"/>
+        <line num="96" count="8" type="stmt"/>
+        <line num="97" count="1" type="stmt"/>
+        <line num="99" count="1" type="stmt"/>
+        <line num="100" count="1" type="stmt"/>
+        <line num="103" count="0" type="stmt"/>
+        <line num="104" count="0" type="stmt"/>
+        <line num="108" count="8" type="stmt"/>
+        <line num="109" count="8" type="stmt"/>
+        <line num="111" count="8" type="stmt"/>
+        <line num="112" count="8" type="stmt"/>
+        <line num="113" count="8" type="stmt"/>
+        <line num="114" count="8" type="stmt"/>
+        <line num="116" count="8" type="stmt"/>
+        <line num="117" count="3" type="stmt"/>
+        <line num="118" count="3" type="stmt"/>
+        <line num="119" count="3" type="stmt"/>
+        <line num="122" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="125" count="8" type="stmt"/>
+        <line num="128" count="8" type="stmt"/>
+        <line num="129" count="5" type="stmt"/>
+        <line num="130" count="0" type="stmt"/>
+        <line num="134" count="5" type="stmt"/>
+        <line num="138" count="8" type="stmt"/>
+        <line num="139" count="8" type="stmt"/>
+        <line num="147" count="8" type="stmt"/>
+        <line num="148" count="8" type="stmt"/>
+        <line num="151" count="8" type="stmt"/>
+        <line num="230" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="Notif">
+      <metrics statements="7" coveredstatements="7" conditionals="26" coveredconditionals="13" methods="2" coveredmethods="2"/>
+      <file name="Notif.tsx" path="C:\Users\ALEXANDRA\Documents\GitHub\HidroWeb_2024A\hidroweb\src\componentes\Notif\Notif.tsx">
+        <metrics statements="7" coveredstatements="7" conditionals="26" coveredconditionals="13" methods="2" coveredmethods="2"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="ProtectedRoute">
+      <metrics statements="16" coveredstatements="16" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+      <file name="ProtectedRoute.tsx" path="C:\Users\ALEXANDRA\Documents\GitHub\HidroWeb_2024A\hidroweb\src\componentes\ProtectedRoute\ProtectedRoute.tsx">
+        <metrics statements="16" coveredstatements="16" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="20" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="25" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
