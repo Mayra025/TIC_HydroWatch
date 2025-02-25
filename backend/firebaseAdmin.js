@@ -10,7 +10,6 @@ const db = admin.firestore();
 
 
 
-//             try {
 db.collection('Sensores').onSnapshot((snapshot) => {
     snapshot.docChanges().forEach(async (change) => {
         if (change.type === 'added') {
