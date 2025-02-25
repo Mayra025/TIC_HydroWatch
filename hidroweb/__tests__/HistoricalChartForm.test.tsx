@@ -82,4 +82,28 @@ describe('HistoricalChartForm Component', () => {
 
         expect(mockProps.resetFields).toHaveBeenCalled();
     });
+
+    it('llama a setEndDate y setError cuando se cambia la fecha de fin', () => {
+        render(<HistoricalChartForm {...mockProps} startDate="2025-01-15" />);
+
+        const input = screen.getByLabelText(/fecha de fin/i);
+        fireEvent.change(input, { target: { value: '2025-01-14' } });
+
+        expect(mockProps.setEndDate).toHaveBeenCalledWith('');
+        expect(mockProps.setError).toHaveBeenCalledWith('La fecha de fin no puede ser anterior a la fecha de inicio.');
+    });
+
+    it('muestra los valores predeterminados en los selectores', () => {
+        render(<HistoricalChartForm {...mockProps} />);
+
+        const selectCultivo = screen.getByLabelText(/cultivo/i) as HTMLSelectElement;
+        expect(selectCultivo.value).toBe('');
+
+        // const selectSensor = screen.getByLabelText(/""/i) as HTMLSelectElement;
+        // expect(selectSensor.value).toBe('');
+    });
+   
+    
+
+
 });

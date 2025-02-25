@@ -18,7 +18,7 @@ export const Notifications = () => {
                 fontSize="sm"
                 margin={4}
                 textAlign={{ base: "justify" }}>
-                En esta módulo se visualiza una comparativa en tiempo real entre los valores actuales de tus cultivos y los rangos ideales establecidos.
+                En este módulo se visualiza una comparativa en tiempo real entre los rangos establecidos y los valores actuales de tus cultivos.
             </Text>
             <Notif></Notif>
 

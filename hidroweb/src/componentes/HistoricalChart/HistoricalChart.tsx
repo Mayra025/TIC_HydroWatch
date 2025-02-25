@@ -358,30 +358,10 @@ export default function HistoricalChart() {
     doc.text(`  - Nivel de Agua: ${cultivoData.requerimientos.nivelAgua}`, 14, currentY);
     currentY += 10;
 
-    // Descripción del procesamiento de datos
-    doc.setFont('helvetica', 'bold');
-    doc.text('Procesamiento de datos:', 14, currentY);
-    currentY += 6;
-    doc.setFont('helvetica', 'normal');
-
-    let processingInfo = '';
-    if (selectedAnalysis === 'daily') {
-      processingInfo = `Procesamiento Diario - Se han agrupado los datos por hora para identificar tendencias diarias. Se requiere al menos 24 mediciones para calcular la tendencia de un día completo.`;
-    } else if (selectedAnalysis === 'multiDayComparison') {
-      processingInfo = `Procesamiento Multidía - Se han agrupado los datos en intervalos diarios para comparar variaciones entre diferentes días. Se requieren al menos 48 mediciones (2 días) para una comparación efectiva.`;
-    } else if (selectedAnalysis === 'historical') {
-      processingInfo = `Procesamiento Histórico - Se ha realizado un análisis histórico con intervalos de 48 horas para evaluar tendencias a largo plazo. Se necesitan al menos 168 mediciones (más de 7 días) para generar un reporte general.`;
-    }
-
-    const processingLines = doc.splitTextToSize(processingInfo, 180);
-    addNewPageIfNeeded(processingLines.length * 6 + 10);
-    doc.text(processingLines, 14, currentY);
-    currentY += processingLines.length * 6 + 10;
-
-
     // Análisis
     const analysis = analyzeData(
       sensorData,
+      // processedSensorData,
       selectedSensor,
       getSensorRanges(selectedSensor, cultivoData.requerimientos)
     );
@@ -422,6 +402,26 @@ export default function HistoricalChart() {
     });
     currentY = (doc as any).previousAutoTable.finalY + 10;
 
+    // Descripción del procesamiento de datos
+    doc.setFont('helvetica', 'bold');
+    doc.text('Procesamiento de datos para la Gráfica:', 14, currentY);
+    currentY += 6;
+    doc.setFont('helvetica', 'normal');
+
+    let processingInfo = '';
+    if (selectedAnalysis === 'daily') {
+      processingInfo = `Procesamiento Diario - Se han agrupado los datos por hora para identificar tendencias diarias. Se requiere al menos 24 mediciones para calcular la tendencia de un día completo.`;
+    } else if (selectedAnalysis === 'multiDayComparison') {
+      processingInfo = `Procesamiento Multidía - Se han agrupado los datos en intervalos diarios para comparar variaciones entre diferentes días. Se requieren al menos 48 mediciones (2 días) para una comparación efectiva.`;
+    } else if (selectedAnalysis === 'historical') {
+      processingInfo = `Procesamiento Histórico - Se ha realizado un análisis histórico con intervalos de 48 horas para evaluar tendencias a largo plazo. Se necesitan al menos 168 mediciones (más de 7 días) para generar un reporte general.`;
+    }
+
+    const processingLines = doc.splitTextToSize(processingInfo, 180);
+    addNewPageIfNeeded(processingLines.length * 6 + 10);
+    doc.text(processingLines, 14, currentY);
+    currentY += processingLines.length * 6 + 10;
+
     // Gráfico (si existe)
     const chartCanvas = chartRef.current?.canvas;
     if (chartCanvas) {
@@ -445,7 +445,7 @@ export default function HistoricalChart() {
       currentY += imageHeight + 10;
     }
 
-    doc.save(`Reporte_Cultivo_${cultivoData.especie}_${cultivoData.variedad}.pdf`);
+    doc.save(`Reporte_Cultivo_${cultivoData.especie}_${cultivoData.variedad}_${selectedSensor}.pdf`);
   };
 
 
@@ -593,7 +593,7 @@ export default function HistoricalChart() {
               },
               elements: {
                 bar: {
-                  borderWidth: 2, // Asegura que las barras tengan borde
+                  borderWidth: 2,
                 },
               },
             }}

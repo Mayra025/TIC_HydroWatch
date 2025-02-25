@@ -39,10 +39,10 @@ const FormR: React.FC = () => {
         const email = (form.elements.namedItem("email") as HTMLInputElement).value;
         const password = (form.elements.namedItem("password") as HTMLInputElement).value;
 
-        if (!name || !email || !password) {
-            setErrorMessage("Todos los campos son obligatorios.");
-            return;
-        }
+        // if (!name || !email || !password) {
+        //     setErrorMessage("Todos los campos son obligatorios.");
+        //     return;
+        // }
 
         try {
             const response = await axios.post("http://localhost:5000/api/auth/register", {
@@ -59,19 +59,16 @@ const FormR: React.FC = () => {
                     navigate("/login");
                 }, 2000);
             }
+
         } catch (error: unknown) {
             if (axios.isAxiosError(error)) {
-                if (error.response?.data?.error) {
-                    setErrorMessage(error.response.data.error);
-                } else {
-                    setErrorMessage("Error en el registro. Inténtalo de nuevo.");
-                }
+                setErrorMessage("Error en el registro. Inténtalo de nuevo.");
             } else {
                 setErrorMessage("Error desconocido en el registro.");
             }
             setSuccessMessage(null);
         } finally {
-            setIsLoading(false); // Desactivamos el estado de carga
+            setIsLoading(false);
         }
     };
 

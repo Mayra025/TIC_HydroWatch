@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { Button, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, useDisclosure } from '@chakra-ui/react';
-import { getFirestore, collection, query, orderBy, limit, onSnapshot, DocumentData, Timestamp } from 'firebase/firestore';
+import { getFirestore, collection, query, orderBy, limit, onSnapshot, DocumentData, Timestamp, doc, getDoc } from 'firebase/firestore';
 import LineChart from '../LineChart/LineChart';
 import BarChart from '../BarChart/BarChart';
 import Tippy from '@tippyjs/react';
@@ -75,7 +75,7 @@ interface SensorCardProps {
 
 const SensorCard: React.FC<SensorCardProps> = ({ userId, cultivoId, sensorType, icon, }) => {
 
-  const [sensorData, setSensorData] = useState<{ value: string; unit: string; timestamp: number } | null>(null);
+  const [sensorData, setSensorData] = useState<{ value: string; unit: string; timestamp: number; status: string } | null>(null);
   const [loading, setLoading] = useState(true);
   const [isRecent, setIsRecent] = useState(true);
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -165,59 +165,79 @@ const SensorCard: React.FC<SensorCardProps> = ({ userId, cultivoId, sensorType, 
     }
 
     const db = getFirestore();
+    const cultivoRef = doc(db, `Hidrocultores/${userId}/Cultivos/${cultivoId}`);
     const sensorsCollection = collection(db, `Hidrocultores/${userId}/Cultivos/${cultivoId}/Sensores`);
     const q = query(sensorsCollection, orderBy('dateTime', 'desc'), limit(1));
 
-    const unsubscribe = onSnapshot(q, (snapshot) => {
-      if (!snapshot.empty) {
-        const latestDoc = snapshot.docs[0].data() as DocumentData;
+    // Recuperamos los requerimientos del cultivo
+    getDoc(cultivoRef).then((docSnapshot) => {
+      const cultivoData = docSnapshot.data();
+      const requisitos = cultivoData?.requerimientos;
+      let value;
+      let status = "✅";
 
-        // Validar que el campo dateTime exista y sea un Timestamp
-        const timestamp = latestDoc.dateTime instanceof Timestamp ? latestDoc.dateTime.toMillis() : null;
-        if (!timestamp) {
-          console.warn('El documento no tiene un campo dateTime válido');
-          setSensorData(null);
-          setLoading(false);
-          return;
-        }
+      // Consultamos el último dato del sensor
+      const unsubscribe = onSnapshot(q, (snapshot) => {
+        if (!snapshot.empty) {
+          const latestDoc = snapshot.docs[0].data() as DocumentData;
 
-        const now = Date.now();
-        const timeDifference = now - timestamp;
+          // Validar que el campo dateTime exista y sea un Timestamp
+          const timestamp = latestDoc.dateTime instanceof Timestamp ? latestDoc.dateTime.toMillis() : null;
+          if (!timestamp) {
+            console.warn('El documento no tiene un campo dateTime válido');
+            setSensorData(null);
+            setLoading(false);
+            return;
+          }
 
-        let value;
-        switch (sensorType.toLowerCase()) {
-          case 'ph':
-            value = latestDoc.pH;
-            break;
-          case 'temperatura':
-            value = latestDoc.temperature;
-            break;
-          case 'nivel de agua':
-            value = latestDoc.waterLevel === 1.0 ? 'Normal' : latestDoc.waterLevel;
-            break;
-          default:
-            value = undefined;
-        }
+          const now = Date.now();
+          const timeDifference = now - timestamp;
 
-        if (value !== undefined) {
-          setSensorData({
-            value: value as string,
-            unit: sensorType === 'pH' ? 'pH' : sensorType === 'Temperatura' ? '°C' : '',
-            timestamp,
-          });
+          switch (sensorType.toLowerCase()) {
+            case 'ph':
+              value = latestDoc.pH;
+              if (value < requisitos?.ph.min || value > requisitos?.ph.max) {
+                status = "⚠️Fuera del umbral";
+              }
+              break;
+            case 'temperatura':
+              value = latestDoc.temperature;
+              if (value < requisitos?.temperatura.min || value > requisitos?.temperatura.max) {
+                status = "⚠️Fuera del umbral";
+              }
+              break;
+            case 'nivel de agua':
+              value = latestDoc.waterLevel === 1.00 ? 'Normal' : latestDoc.waterLevel;
+              // Asumimos que "Normal" es el valor dentro del umbral
+              if (value != 1.00) {
+                status = "⚠️Fuera del umbral";
+              }
+              break;
+            default:
+              value = undefined;
+          }
 
-          setIsRecent(timeDifference <= 300000); // 5 minutos
+          if (value !== undefined) {
+            setSensorData({
+              value: value as string,
+              unit: sensorType === 'pH' ? 'pH' : sensorType === 'Temperatura' ? '°C' : '',
+              timestamp,
+              status,
+            });
+
+            setIsRecent(timeDifference <= 300000); // 5 minutos
+          } else {
+            setSensorData(null);
+          }
         } else {
+          console.warn('No hay datos en la colección de sensores para este cultivo.');
           setSensorData(null);
         }
-      } else {
-        console.warn('No hay datos en la colección de sensores para este cultivo.');
-        setSensorData(null);
-      }
-      setLoading(false);
-    });
+        setLoading(false);
+      });
 
-    return () => unsubscribe();
+      return () => unsubscribe();
+    });
   }, [userId, cultivoId, sensorType]);
 
   return (
@@ -241,10 +261,8 @@ const SensorCard: React.FC<SensorCardProps> = ({ userId, cultivoId, sensorType, 
           ? 'Cargando...'
           : sensorData
             ? isRecent
-              ? `Actual: ${sensorData.value} ${sensorData.unit}`
-              // : `${sensorData.value} ${sensorData.unit}`
-              : `Última conexión: ${sensorData.value} ${sensorData.unit}`
-
+              ? `Actual: ${sensorData.value} ${sensorData.unit} - ${sensorData.status}`
+              : `Última conexión: ${sensorData.value} ${sensorData.unit} - ${sensorData.status}`
             : 'No hay datos disponibles'}
       </SensorData>
 

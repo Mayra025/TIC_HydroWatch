@@ -93,4 +93,28 @@ describe('CurrentWeather Component', () => {
         consoleErrorMock.mockRestore();
     });
 
+
+    it('debe mostrar un mensaje si los datos del clima son inválidos', async () => {
+        (navigator.geolocation.getCurrentPosition as jest.Mock).mockImplementationOnce(
+            (success) => {
+                success({
+                    coords: { latitude: -0.2299, longitude: -78.5249 },
+                });
+            }
+        );
+
+        global.fetch = jest.fn().mockResolvedValueOnce({
+            ok: true,
+            json: async () => ({}), // Respuesta vacía
+        });
+
+        render(<CurrentWeather />);
+
+        await waitFor(() => {
+            expect(screen.getByText(/No se pudieron cargar los datos del clima/i)).toBeInTheDocument();
+        });
+    });
+
+    
+
 });

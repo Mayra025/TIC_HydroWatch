@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1737350902399" clover="3.2.0">
-  <project timestamp="1737350902400" name="All files">
-    <metrics statements="443" coveredstatements="377" conditionals="194" coveredconditionals="118" methods="84" coveredmethods="67" elements="721" coveredelements="562" complexity="0" loc="443" ncloc="443" packages="13" files="14" classes="14"/>
+<coverage generated="1740288919646" clover="3.2.0">
+  <project timestamp="1740288919647" name="All files">
+    <metrics statements="441" coveredstatements="407" conditionals="187" coveredconditionals="141" methods="82" coveredmethods="75" elements="710" coveredelements="623" complexity="0" loc="441" ncloc="441" packages="13" files="14" classes="14"/>
     <package name="CurrentWeather">
-      <metrics statements="38" coveredstatements="37" conditionals="7" coveredconditionals="6" methods="5" coveredmethods="5"/>
+      <metrics statements="38" coveredstatements="38" conditionals="7" coveredconditionals="7" methods="5" coveredmethods="5"/>
       <file name="CurrentWeather.tsx" path="C:\Users\ALEXANDRA\Documents\GitHub\HidroWeb_2024A\hidroweb\src\componentes\CurrentWeather\CurrentWeather.tsx">
-        <metrics statements="38" coveredstatements="37" conditionals="7" coveredconditionals="6" methods="5" coveredmethods="5"/>
+        <metrics statements="38" coveredstatements="38" conditionals="7" coveredconditionals="7" methods="5" coveredmethods="5"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -13,33 +13,33 @@
         <line num="6" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
         <line num="31" count="1" type="stmt"/>
-        <line num="32" count="6" type="stmt"/>
-        <line num="33" count="6" type="stmt"/>
-        <line num="34" count="6" type="stmt"/>
-        <line num="36" count="6" type="stmt"/>
-        <line num="37" count="3" type="stmt"/>
-        <line num="39" count="2" type="stmt"/>
-        <line num="40" count="2" type="stmt"/>
-        <line num="41" count="2" type="stmt"/>
+        <line num="32" count="8" type="stmt"/>
+        <line num="33" count="8" type="stmt"/>
+        <line num="34" count="8" type="stmt"/>
+        <line num="36" count="8" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
+        <line num="39" count="3" type="stmt"/>
+        <line num="40" count="3" type="stmt"/>
+        <line num="41" count="3" type="stmt"/>
         <line num="44" count="1" type="stmt"/>
         <line num="45" count="1" type="stmt"/>
-        <line num="50" count="6" type="stmt"/>
-        <line num="51" count="2" type="stmt"/>
-        <line num="52" count="2" type="stmt"/>
-        <line num="55" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="50" count="8" type="stmt"/>
+        <line num="51" count="3" type="stmt"/>
+        <line num="52" count="3" type="stmt"/>
+        <line num="55" count="3" type="cond" truecount="1" falsecount="0"/>
         <line num="56" count="1" type="stmt"/>
-        <line num="58" count="1" type="stmt"/>
-        <line num="59" count="1" type="stmt"/>
-        <line num="60" count="1" type="stmt"/>
+        <line num="58" count="2" type="stmt"/>
+        <line num="59" count="2" type="stmt"/>
+        <line num="60" count="2" type="stmt"/>
         <line num="62" count="1" type="stmt"/>
         <line num="63" count="1" type="stmt"/>
         <line num="64" count="1" type="stmt"/>
-        <line num="69" count="6" type="cond" truecount="1" falsecount="0"/>
-        <line num="70" count="3" type="stmt"/>
-        <line num="73" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="69" count="8" type="cond" truecount="1" falsecount="0"/>
+        <line num="70" count="4" type="stmt"/>
+        <line num="73" count="4" type="cond" truecount="1" falsecount="0"/>
         <line num="74" count="2" type="stmt"/>
-        <line num="77" count="1" type="cond" truecount="3" falsecount="1"/>
-        <line num="78" count="0" type="stmt"/>
+        <line num="77" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="78" count="1" type="stmt"/>
         <line num="81" count="1" type="stmt"/>
         <line num="82" count="1" type="stmt"/>
         <line num="84" count="1" type="stmt"/>
@@ -47,55 +47,54 @@
       </file>
     </package>
     <package name="FiveDayClimate">
-      <metrics statements="46" coveredstatements="34" conditionals="4" coveredconditionals="3" methods="8" coveredmethods="5"/>
+      <metrics statements="45" coveredstatements="43" conditionals="8" coveredconditionals="7" methods="8" coveredmethods="7"/>
       <file name="FiveDayClimate.tsx" path="C:\Users\ALEXANDRA\Documents\GitHub\HidroWeb_2024A\hidroweb\src\componentes\FiveDayClimate\FiveDayClimate.tsx">
-        <metrics statements="46" coveredstatements="34" conditionals="4" coveredconditionals="3" methods="8" coveredmethods="5"/>
+        <metrics statements="45" coveredstatements="43" conditionals="8" coveredconditionals="7" methods="8" coveredmethods="7"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
-        <line num="22" count="5" type="stmt"/>
-        <line num="23" count="5" type="stmt"/>
-        <line num="24" count="5" type="stmt"/>
-        <line num="26" count="5" type="stmt"/>
-        <line num="27" count="3" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="31" count="1" type="stmt"/>
+        <line num="22" count="11" type="stmt"/>
+        <line num="23" count="11" type="stmt"/>
+        <line num="24" count="11" type="stmt"/>
+        <line num="26" count="11" type="stmt"/>
+        <line num="27" count="6" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
+        <line num="30" count="4" type="stmt"/>
+        <line num="31" count="4" type="stmt"/>
         <line num="34" count="1" type="stmt"/>
         <line num="35" count="1" type="stmt"/>
-        <line num="40" count="5" type="stmt"/>
-        <line num="41" count="1" type="stmt"/>
-        <line num="42" count="1" type="stmt"/>
-        <line num="43" count="1" type="stmt"/>
-        <line num="46" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="40" count="11" type="stmt"/>
+        <line num="41" count="4" type="stmt"/>
+        <line num="42" count="4" type="stmt"/>
+        <line num="43" count="4" type="stmt"/>
+        <line num="46" count="4" type="cond" truecount="1" falsecount="0"/>
         <line num="47" count="1" type="stmt"/>
-        <line num="49" count="0" type="stmt"/>
-        <line num="50" count="0" type="stmt"/>
-        <line num="51" count="0" type="stmt"/>
-        <line num="53" count="1" type="stmt"/>
+        <line num="49" count="3" type="stmt"/>
+        <line num="53" count="3" type="cond" truecount="3" falsecount="0"/>
         <line num="54" count="1" type="stmt"/>
-        <line num="55" count="1" type="stmt"/>
-        <line num="60" count="5" type="cond" truecount="1" falsecount="0"/>
-        <line num="61" count="3" type="stmt"/>
-        <line num="64" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="65" count="2" type="stmt"/>
-        <line num="68" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="69" count="0" type="stmt"/>
-        <line num="73" count="0" type="stmt"/>
-        <line num="74" count="0" type="stmt"/>
-        <line num="77" count="0" type="stmt"/>
-        <line num="101" count="0" type="stmt"/>
-        <line num="106" count="0" type="stmt"/>
-        <line num="131" count="1" type="stmt"/>
-        <line num="132" count="0" type="stmt"/>
-        <line num="133" count="0" type="stmt"/>
-        <line num="141" count="1" type="stmt"/>
-        <line num="149" count="1" type="stmt"/>
-        <line num="154" count="1" type="stmt"/>
-        <line num="164" count="1" type="stmt"/>
-        <line num="169" count="1" type="stmt"/>
+        <line num="57" count="2" type="stmt"/>
+        <line num="58" count="2" type="stmt"/>
+        <line num="61" count="2" type="stmt"/>
+        <line num="62" count="2" type="stmt"/>
+        <line num="67" count="11" type="cond" truecount="1" falsecount="0"/>
+        <line num="68" count="6" type="stmt"/>
+        <line num="71" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="72" count="3" type="stmt"/>
+        <line num="85" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="86" count="8" type="stmt"/>
+        <line num="89" count="2" type="stmt"/>
+        <line num="113" count="2" type="stmt"/>
+        <line num="118" count="7" type="stmt"/>
+        <line num="143" count="1" type="stmt"/>
+        <line num="144" count="0" type="stmt"/>
+        <line num="145" count="0" type="stmt"/>
+        <line num="153" count="1" type="stmt"/>
+        <line num="161" count="1" type="stmt"/>
+        <line num="166" count="1" type="stmt"/>
         <line num="176" count="1" type="stmt"/>
+        <line num="181" count="1" type="stmt"/>
+        <line num="188" count="1" type="stmt"/>
       </file>
     </package>
     <package name="Footer">
@@ -108,104 +107,114 @@
       </file>
     </package>
     <package name="FormC">
-      <metrics statements="56" coveredstatements="39" conditionals="48" coveredconditionals="30" methods="9" coveredmethods="5"/>
+      <metrics statements="65" coveredstatements="50" conditionals="52" coveredconditionals="34" methods="10" coveredmethods="8"/>
       <file name="FormC.tsx" path="C:\Users\ALEXANDRA\Documents\GitHub\HidroWeb_2024A\hidroweb\src\componentes\FormC\FormC.tsx">
-        <metrics statements="56" coveredstatements="39" conditionals="48" coveredconditionals="30" methods="9" coveredmethods="5"/>
+        <metrics statements="65" coveredstatements="50" conditionals="52" coveredconditionals="34" methods="10" coveredmethods="8"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
         <line num="29" count="1" type="stmt"/>
         <line num="30" count="1" type="stmt"/>
-        <line num="47" count="1" type="stmt"/>
-        <line num="48" count="1" type="stmt"/>
-        <line num="51" count="1" type="stmt"/>
-        <line num="164" count="1" type="stmt"/>
-        <line num="165" count="4" type="stmt"/>
-        <line num="166" count="4" type="cond" truecount="3" falsecount="1"/>
-        <line num="167" count="4" type="cond" truecount="3" falsecount="1"/>
-        <line num="168" count="4" type="cond" truecount="3" falsecount="1"/>
-        <line num="170" count="4" type="stmt"/>
-        <line num="176" count="4" type="stmt"/>
-        <line num="177" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="178" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="179" count="1" type="stmt"/>
-        <line num="180" count="1" type="stmt"/>
-        <line num="181" count="1" type="stmt"/>
-        <line num="182" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
+        <line num="174" count="1" type="stmt"/>
         <line num="183" count="1" type="stmt"/>
-        <line num="189" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="190" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="191" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="192" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="193" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="195" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="200" count="1" type="stmt"/>
-        <line num="206" count="4" type="stmt"/>
-        <line num="208" count="2" type="cond" truecount="3" falsecount="0"/>
-        <line num="209" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="214" count="1" type="stmt"/>
-        <line num="219" count="4" type="stmt"/>
-        <line num="220" count="0" type="stmt"/>
-        <line num="221" count="0" type="stmt"/>
-        <line num="222" count="0" type="stmt"/>
-        <line num="224" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="226" count="0" type="stmt"/>
-        <line num="235" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="236" count="0" type="stmt"/>
-        <line num="237" count="0" type="stmt"/>
-        <line num="239" count="0" type="stmt"/>
-        <line num="240" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="241" count="0" type="stmt"/>
-        <line num="242" count="0" type="stmt"/>
-        <line num="245" count="0" type="stmt"/>
-        <line num="246" count="0" type="stmt"/>
-        <line num="249" count="4" type="stmt"/>
-        <line num="311" count="0" type="stmt"/>
-        <line num="315" count="20" type="stmt"/>
-        <line num="349" count="0" type="stmt"/>
-        <line num="352" count="16" type="stmt"/>
-        <line num="379" count="0" type="stmt"/>
-        <line num="495" count="1" type="stmt"/>
+        <line num="184" count="12" type="stmt"/>
+        <line num="185" count="12" type="cond" truecount="3" falsecount="1"/>
+        <line num="186" count="12" type="cond" truecount="3" falsecount="1"/>
+        <line num="187" count="12" type="cond" truecount="3" falsecount="1"/>
+        <line num="188" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="189" count="12" type="stmt"/>
+        <line num="191" count="12" type="stmt"/>
+        <line num="192" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="195" count="12" type="stmt"/>
+        <line num="202" count="12" type="stmt"/>
+        <line num="203" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="204" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="205" count="3" type="stmt"/>
+        <line num="206" count="3" type="stmt"/>
+        <line num="208" count="3" type="stmt"/>
+        <line num="209" count="3" type="stmt"/>
+        <line num="210" count="3" type="stmt"/>
+        <line num="211" count="3" type="stmt"/>
+        <line num="217" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="218" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="219" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="220" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="221" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="222" count="1" type="stmt"/>
+        <line num="223" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="228" count="1" type="stmt"/>
+        <line num="234" count="12" type="stmt"/>
+        <line num="236" count="6" type="cond" truecount="3" falsecount="0"/>
+        <line num="237" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="242" count="2" type="stmt"/>
+        <line num="246" count="12" type="stmt"/>
+        <line num="247" count="0" type="stmt"/>
+        <line num="248" count="0" type="stmt"/>
+        <line num="249" count="0" type="stmt"/>
+        <line num="251" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="253" count="0" type="stmt"/>
+        <line num="263" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="264" count="0" type="stmt"/>
+        <line num="265" count="0" type="stmt"/>
+        <line num="267" count="0" type="stmt"/>
+        <line num="268" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="269" count="0" type="stmt"/>
+        <line num="270" count="0" type="stmt"/>
+        <line num="273" count="0" type="stmt"/>
+        <line num="274" count="0" type="stmt"/>
+        <line num="277" count="12" type="stmt"/>
+        <line num="364" count="1" type="stmt"/>
+        <line num="368" count="60" type="stmt"/>
+        <line num="402" count="1" type="stmt"/>
+        <line num="405" count="48" type="stmt"/>
+        <line num="435" count="0" type="stmt"/>
+        <line num="548" count="1" type="stmt"/>
       </file>
     </package>
     <package name="FormL">
-      <metrics statements="27" coveredstatements="25" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="4"/>
+      <metrics statements="28" coveredstatements="28" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="4"/>
       <file name="FormL.tsx" path="C:\Users\ALEXANDRA\Documents\GitHub\HidroWeb_2024A\hidroweb\src\componentes\FormL\FormL.tsx">
-        <metrics statements="27" coveredstatements="25" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="4"/>
+        <metrics statements="28" coveredstatements="28" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="4"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
-        <line num="20" count="8" type="stmt"/>
-        <line num="21" count="8" type="stmt"/>
-        <line num="22" count="8" type="stmt"/>
-        <line num="23" count="8" type="stmt"/>
-        <line num="24" count="8" type="stmt"/>
-        <line num="25" count="8" type="stmt"/>
-        <line num="26" count="8" type="stmt"/>
-        <line num="28" count="8" type="stmt"/>
-        <line num="30" count="8" type="stmt"/>
-        <line num="32" count="8" type="stmt"/>
-        <line num="33" count="2" type="stmt"/>
-        <line num="34" count="2" type="stmt"/>
-        <line num="35" count="2" type="stmt"/>
-        <line num="36" count="1" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="44" count="2" type="stmt"/>
-        <line num="48" count="8" type="stmt"/>
-        <line num="98" count="2" type="stmt"/>
-        <line num="115" count="2" type="stmt"/>
-        <line num="146" count="1" type="stmt"/>
+        <line num="20" count="15" type="stmt"/>
+        <line num="21" count="15" type="stmt"/>
+        <line num="22" count="15" type="stmt"/>
+        <line num="23" count="15" type="stmt"/>
+        <line num="24" count="15" type="stmt"/>
+        <line num="25" count="15" type="stmt"/>
+        <line num="26" count="15" type="stmt"/>
+        <line num="28" count="15" type="stmt"/>
+        <line num="30" count="15" type="stmt"/>
+        <line num="32" count="15" type="stmt"/>
+        <line num="33" count="6" type="stmt"/>
+        <line num="34" count="6" type="stmt"/>
+        <line num="35" count="6" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="45" count="5" type="stmt"/>
+        <line num="49" count="15" type="stmt"/>
+        <line num="99" count="3" type="stmt"/>
+        <line num="116" count="3" type="stmt"/>
+        <line num="147" count="1" type="stmt"/>
       </file>
     </package>
     <package name="FormR">
-      <metrics statements="41" coveredstatements="35" conditionals="21" coveredconditionals="12" methods="4" coveredmethods="2"/>
+      <metrics statements="37" coveredstatements="36" conditionals="11" coveredconditionals="8" methods="4" coveredmethods="3"/>
       <file name="FormR.tsx" path="C:\Users\ALEXANDRA\Documents\GitHub\HidroWeb_2024A\hidroweb\src\componentes\FormR\FormR.tsx">
-        <metrics statements="41" coveredstatements="35" conditionals="21" coveredconditionals="12" methods="4" coveredmethods="2"/>
+        <metrics statements="37" coveredstatements="36" conditionals="11" coveredconditionals="8" methods="4" coveredmethods="3"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -213,46 +222,42 @@
         <line num="18" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
-        <line num="22" count="4" type="stmt"/>
-        <line num="23" count="4" type="stmt"/>
-        <line num="24" count="4" type="stmt"/>
-        <line num="25" count="4" type="stmt"/>
-        <line num="26" count="4" type="stmt"/>
-        <line num="27" count="4" type="stmt"/>
-        <line num="28" count="4" type="stmt"/>
-        <line num="30" count="4" type="stmt"/>
-        <line num="32" count="4" type="stmt"/>
-        <line num="33" count="2" type="stmt"/>
-        <line num="34" count="2" type="stmt"/>
-        <line num="35" count="2" type="stmt"/>
-        <line num="36" count="2" type="stmt"/>
-        <line num="37" count="2" type="stmt"/>
-        <line num="38" count="2" type="stmt"/>
-        <line num="40" count="2" type="cond" truecount="4" falsecount="1"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="45" count="2" type="stmt"/>
-        <line num="47" count="2" type="stmt"/>
-        <line num="55" count="1" type="stmt"/>
-        <line num="57" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="58" count="1" type="stmt"/>
+        <line num="22" count="14" type="stmt"/>
+        <line num="23" count="14" type="stmt"/>
+        <line num="24" count="14" type="stmt"/>
+        <line num="25" count="14" type="stmt"/>
+        <line num="26" count="14" type="stmt"/>
+        <line num="27" count="14" type="stmt"/>
+        <line num="28" count="14" type="stmt"/>
+        <line num="30" count="14" type="stmt"/>
+        <line num="32" count="14" type="stmt"/>
+        <line num="34" count="14" type="stmt"/>
+        <line num="35" count="5" type="stmt"/>
+        <line num="36" count="5" type="stmt"/>
+        <line num="37" count="5" type="stmt"/>
+        <line num="38" count="5" type="stmt"/>
+        <line num="39" count="5" type="stmt"/>
+        <line num="40" count="5" type="stmt"/>
+        <line num="47" count="5" type="stmt"/>
+        <line num="48" count="5" type="stmt"/>
+        <line num="54" count="2" type="stmt"/>
+        <line num="55" count="2" type="stmt"/>
+        <line num="57" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="58" count="2" type="stmt"/>
         <line num="59" count="1" type="stmt"/>
-        <line num="60" count="1" type="stmt"/>
-        <line num="61" count="0" type="stmt"/>
-        <line num="65" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="66" count="0" type="cond" truecount="0" falsecount="5"/>
-        <line num="67" count="0" type="stmt"/>
-        <line num="69" count="0" type="stmt"/>
-        <line num="72" count="1" type="stmt"/>
-        <line num="74" count="1" type="stmt"/>
-        <line num="78" count="4" type="stmt"/>
-        <line num="210" count="1" type="stmt"/>
+        <line num="64" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="67" count="3" type="stmt"/>
+        <line num="69" count="3" type="stmt"/>
+        <line num="71" count="5" type="stmt"/>
+        <line num="75" count="14" type="stmt"/>
+        <line num="190" count="1" type="stmt"/>
       </file>
     </package>
     <package name="FormU">
-      <metrics statements="64" coveredstatements="57" conditionals="29" coveredconditionals="18" methods="10" coveredmethods="9"/>
+      <metrics statements="62" coveredstatements="57" conditionals="28" coveredconditionals="22" methods="10" coveredmethods="9"/>
       <file name="FormU.tsx" path="C:\Users\ALEXANDRA\Documents\GitHub\HidroWeb_2024A\hidroweb\src\componentes\FormU\FormU.tsx">
-        <metrics statements="64" coveredstatements="57" conditionals="29" coveredconditionals="18" methods="10" coveredmethods="9"/>
+        <metrics statements="62" coveredstatements="57" conditionals="28" coveredconditionals="22" methods="10" coveredmethods="9"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
@@ -261,150 +266,146 @@
         <line num="17" count="1" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
-        <line num="21" count="11" type="stmt"/>
-        <line num="22" count="11" type="stmt"/>
-        <line num="23" count="11" type="stmt"/>
-        <line num="24" count="11" type="stmt"/>
-        <line num="25" count="11" type="stmt"/>
-        <line num="26" count="11" type="stmt"/>
-        <line num="27" count="11" type="stmt"/>
-        <line num="29" count="11" type="stmt"/>
-        <line num="30" count="11" type="stmt"/>
-        <line num="31" count="11" type="stmt"/>
-        <line num="33" count="11" type="stmt"/>
-        <line num="34" count="11" type="stmt"/>
-        <line num="35" count="11" type="stmt"/>
-        <line num="36" count="11" type="cond" truecount="1" falsecount="0"/>
-        <line num="37" count="11" type="stmt"/>
-        <line num="38" count="11" type="stmt"/>
-        <line num="39" count="11" type="cond" truecount="1" falsecount="0"/>
-        <line num="40" count="11" type="stmt"/>
-        <line num="41" count="11" type="cond" truecount="1" falsecount="1"/>
-        <line num="42" count="11" type="cond" truecount="1" falsecount="1"/>
-        <line num="43" count="11" type="cond" truecount="1" falsecount="1"/>
-        <line num="44" count="11" type="cond" truecount="1" falsecount="1"/>
-        <line num="45" count="11" type="cond" truecount="2" falsecount="0"/>
-        <line num="46" count="11" type="stmt"/>
-        <line num="54" count="11" type="stmt"/>
-        <line num="57" count="11" type="stmt"/>
-        <line num="58" count="0" type="cond" truecount="0" falsecount="3"/>
-        <line num="59" count="0" type="stmt"/>
-        <line num="63" count="11" type="stmt"/>
-        <line num="64" count="12" type="cond" truecount="3" falsecount="0"/>
-        <line num="66" count="11" type="stmt"/>
-        <line num="67" count="1" type="cond" truecount="0" falsecount="1"/>
-        <line num="69" count="1" type="stmt"/>
-        <line num="70" count="1" type="stmt"/>
-        <line num="71" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="72" count="1" type="stmt"/>
-        <line num="75" count="1" type="stmt"/>
-        <line num="76" count="1" type="cond" truecount="0" falsecount="1"/>
-        <line num="77" count="0" type="stmt"/>
-        <line num="78" count="0" type="stmt"/>
-        <line num="79" count="0" type="stmt"/>
-        <line num="82" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="83" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="86" count="1" type="stmt"/>
-        <line num="94" count="1" type="stmt"/>
-        <line num="98" count="0" type="stmt"/>
-        <line num="102" count="11" type="stmt"/>
+        <line num="21" count="15" type="stmt"/>
+        <line num="22" count="15" type="stmt"/>
+        <line num="23" count="15" type="stmt"/>
+        <line num="24" count="15" type="stmt"/>
+        <line num="25" count="15" type="stmt"/>
+        <line num="26" count="15" type="stmt"/>
+        <line num="28" count="15" type="stmt"/>
+        <line num="29" count="15" type="stmt"/>
+        <line num="30" count="15" type="stmt"/>
+        <line num="32" count="15" type="stmt"/>
+        <line num="33" count="14" type="stmt"/>
+        <line num="34" count="14" type="stmt"/>
+        <line num="35" count="14" type="cond" truecount="1" falsecount="0"/>
+        <line num="36" count="10" type="stmt"/>
+        <line num="37" count="10" type="stmt"/>
+        <line num="38" count="10" type="cond" truecount="1" falsecount="0"/>
+        <line num="39" count="10" type="stmt"/>
+        <line num="40" count="10" type="cond" truecount="1" falsecount="1"/>
+        <line num="41" count="10" type="cond" truecount="1" falsecount="1"/>
+        <line num="42" count="10" type="cond" truecount="1" falsecount="1"/>
+        <line num="43" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="10" type="stmt"/>
+        <line num="50" count="14" type="stmt"/>
+        <line num="53" count="15" type="stmt"/>
+        <line num="54" count="1" type="cond" truecount="3" falsecount="0"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="59" count="15" type="stmt"/>
+        <line num="60" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="62" count="15" type="stmt"/>
+        <line num="63" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="67" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="68" count="1" type="stmt"/>
+        <line num="71" count="1" type="stmt"/>
+        <line num="72" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="74" count="0" type="stmt"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="78" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="79" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="82" count="1" type="stmt"/>
+        <line num="89" count="1" type="stmt"/>
+        <line num="93" count="0" type="stmt"/>
+        <line num="97" count="15" type="stmt"/>
+        <line num="98" count="2" type="stmt"/>
+        <line num="99" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="101" count="1" type="stmt"/>
         <line num="103" count="1" type="stmt"/>
-        <line num="104" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="106" count="1" type="stmt"/>
-        <line num="108" count="0" type="stmt"/>
-        <line num="114" count="11" type="stmt"/>
-        <line num="158" count="1" type="stmt"/>
-        <line num="168" count="1" type="stmt"/>
-        <line num="179" count="1" type="stmt"/>
+        <line num="109" count="15" type="stmt"/>
+        <line num="153" count="1" type="stmt"/>
+        <line num="165" count="0" type="stmt"/>
+        <line num="178" count="1" type="stmt"/>
         <line num="246" count="1" type="stmt"/>
       </file>
     </package>
     <package name="HistoricalChartForm">
-      <metrics statements="23" coveredstatements="14" conditionals="8" coveredconditionals="3" methods="9" coveredmethods="6"/>
+      <metrics statements="21" coveredstatements="19" conditionals="8" coveredconditionals="6" methods="7" coveredmethods="7"/>
       <file name="HistoricalChartForm.tsx" path="C:\Users\ALEXANDRA\Documents\GitHub\HidroWeb_2024A\hidroweb\src\componentes\HistoricalChartForm\HistoricalChartForm.tsx">
-        <metrics statements="23" coveredstatements="14" conditionals="8" coveredconditionals="3" methods="9" coveredmethods="6"/>
+        <metrics statements="21" coveredstatements="19" conditionals="8" coveredconditionals="6" methods="7" coveredmethods="7"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="43" count="6" type="stmt"/>
-        <line num="51" count="1" type="stmt"/>
-        <line num="55" count="12" type="stmt"/>
-        <line num="66" count="1" type="stmt"/>
-        <line num="69" count="12" type="stmt"/>
-        <line num="104" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="39" count="8" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="51" count="16" type="stmt"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="66" count="16" type="stmt"/>
         <line num="105" count="1" type="stmt"/>
-        <line num="106" count="1" type="cond" truecount="3" falsecount="1"/>
-        <line num="107" count="1" type="stmt"/>
+        <line num="106" count="1" type="stmt"/>
+        <line num="107" count="1" type="cond" truecount="3" falsecount="1"/>
         <line num="108" count="1" type="stmt"/>
-        <line num="110" count="0" type="stmt"/>
-        <line num="124" count="0" type="stmt"/>
-        <line num="125" count="0" type="stmt"/>
-        <line num="126" count="0" type="cond" truecount="0" falsecount="4"/>
-        <line num="127" count="0" type="stmt"/>
-        <line num="128" count="0" type="stmt"/>
+        <line num="109" count="1" type="stmt"/>
+        <line num="111" count="0" type="stmt"/>
+        <line num="124" count="1" type="stmt"/>
+        <line num="125" count="1" type="stmt"/>
+        <line num="126" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="127" count="1" type="stmt"/>
+        <line num="128" count="1" type="stmt"/>
         <line num="130" count="0" type="stmt"/>
-        <line num="181" count="0" type="stmt"/>
-        <line num="186" count="0" type="stmt"/>
-        <line num="204" count="1" type="stmt"/>
+        <line num="169" count="1" type="stmt"/>
       </file>
     </package>
     <package name="LineChart">
       <metrics statements="53" coveredstatements="44" conditionals="31" coveredconditionals="16" methods="9" coveredmethods="9"/>
       <file name="LineChart.tsx" path="C:\Users\ALEXANDRA\Documents\GitHub\HidroWeb_2024A\hidroweb\src\componentes\LineChart\LineChart.tsx">
         <metrics statements="53" coveredstatements="44" conditionals="31" coveredconditionals="16" methods="9" coveredmethods="9"/>
-        <line num="236" count="1" type="stmt"/>
-        <line num="237" count="1" type="stmt"/>
-        <line num="238" count="1" type="stmt"/>
-        <line num="239" count="1" type="stmt"/>
-        <line num="241" count="1" type="stmt"/>
-        <line num="252" count="1" type="stmt"/>
-        <line num="268" count="1" type="stmt"/>
-        <line num="269" count="4" type="stmt"/>
-        <line num="270" count="4" type="stmt"/>
-        <line num="271" count="4" type="stmt"/>
-        <line num="273" count="4" type="stmt"/>
-        <line num="274" count="2" type="cond" truecount="2" falsecount="1"/>
-        <line num="275" count="0" type="stmt"/>
-        <line num="276" count="0" type="stmt"/>
-        <line num="279" count="2" type="stmt"/>
-        <line num="280" count="2" type="stmt"/>
-        <line num="281" count="2" type="stmt"/>
-        <line num="282" count="2" type="stmt"/>
-        <line num="284" count="2" type="stmt"/>
-        <line num="287" count="1" type="stmt"/>
-        <line num="288" count="1" type="stmt"/>
-        <line num="289" count="1" type="stmt"/>
-        <line num="290" count="1" type="stmt"/>
-        <line num="293" count="1" type="stmt"/>
-        <line num="294" count="1" type="stmt"/>
-        <line num="295" count="1" type="stmt"/>
-        <line num="299" count="2" type="stmt"/>
-        <line num="302" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="303" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="305" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="309" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="313" count="1" type="stmt"/>
-        <line num="314" count="1" type="stmt"/>
-        <line num="316" count="1" type="cond" truecount="4" falsecount="1"/>
-        <line num="320" count="1" type="stmt"/>
-        <line num="321" count="1" type="cond" truecount="1" falsecount="3"/>
-        <line num="323" count="0" type="stmt"/>
-        <line num="325" count="1" type="stmt"/>
-        <line num="327" count="0" type="stmt"/>
-        <line num="329" count="0" type="stmt"/>
-        <line num="333" count="1" type="stmt"/>
-        <line num="335" count="1" type="stmt"/>
-        <line num="337" count="1" type="cond" truecount="3" falsecount="0"/>
-        <line num="338" count="1" type="stmt"/>
-        <line num="344" count="0" type="stmt"/>
-        <line num="350" count="1" type="cond" truecount="1" falsecount="3"/>
-        <line num="352" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="354" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="356" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="358" count="0" type="stmt"/>
-        <line num="369" count="1" type="stmt"/>
-        <line num="397" count="1" type="stmt"/>
-        <line num="400" count="1" type="stmt"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
+        <line num="36" count="4" type="stmt"/>
+        <line num="38" count="4" type="stmt"/>
+        <line num="39" count="2" type="cond" truecount="2" falsecount="1"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="49" count="2" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="64" count="2" type="stmt"/>
+        <line num="67" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="68" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="70" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="74" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="78" count="1" type="stmt"/>
+        <line num="79" count="1" type="stmt"/>
+        <line num="81" count="1" type="cond" truecount="4" falsecount="1"/>
+        <line num="85" count="1" type="stmt"/>
+        <line num="86" count="1" type="cond" truecount="1" falsecount="3"/>
+        <line num="88" count="0" type="stmt"/>
+        <line num="90" count="1" type="stmt"/>
+        <line num="92" count="0" type="stmt"/>
+        <line num="94" count="0" type="stmt"/>
+        <line num="98" count="1" type="stmt"/>
+        <line num="100" count="1" type="stmt"/>
+        <line num="102" count="1" type="cond" truecount="3" falsecount="0"/>
+        <line num="103" count="1" type="stmt"/>
+        <line num="109" count="0" type="stmt"/>
+        <line num="115" count="1" type="cond" truecount="1" falsecount="3"/>
+        <line num="117" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="119" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="121" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="123" count="0" type="stmt"/>
+        <line num="134" count="1" type="stmt"/>
+        <line num="162" count="1" type="stmt"/>
+        <line num="165" count="1" type="stmt"/>
       </file>
     </package>
     <package name="LoginIllustration">
@@ -420,13 +421,13 @@
         <line num="4" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="12" count="2" type="stmt"/>
-        <line num="59" count="1" type="stmt"/>
+        <line num="77" count="1" type="stmt"/>
       </file>
     </package>
     <package name="Navbar">
-      <metrics statements="62" coveredstatements="59" conditionals="14" coveredconditionals="12" methods="17" coveredmethods="14"/>
+      <metrics statements="59" coveredstatements="59" conditionals="14" coveredconditionals="14" methods="16" coveredmethods="15"/>
       <file name="Navbar.tsx" path="C:\Users\ALEXANDRA\Documents\GitHub\HidroWeb_2024A\hidroweb\src\componentes\Navbar\Navbar.tsx">
-        <metrics statements="62" coveredstatements="59" conditionals="14" coveredconditionals="12" methods="17" coveredmethods="14"/>
+        <metrics statements="59" coveredstatements="59" conditionals="14" coveredconditionals="14" methods="16" coveredmethods="15"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -441,67 +442,64 @@
         <line num="14" count="1" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
         <line num="32" count="1" type="stmt"/>
-        <line num="38" count="24" type="cond" truecount="1" falsecount="1"/>
-        <line num="39" count="24" type="cond" truecount="1" falsecount="1"/>
-        <line num="67" count="1" type="stmt"/>
+        <line num="38" count="27" type="cond" truecount="2" falsecount="0"/>
+        <line num="39" count="27" type="cond" truecount="2" falsecount="0"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="67" count="10" type="stmt"/>
         <line num="68" count="9" type="stmt"/>
-        <line num="69" count="8" type="stmt"/>
-        <line num="70" count="8" type="stmt"/>
-        <line num="71" count="8" type="stmt"/>
-        <line num="73" count="8" type="stmt"/>
-        <line num="74" count="8" type="stmt"/>
-        <line num="76" count="8" type="stmt"/>
-        <line num="77" count="5" type="stmt"/>
-        <line num="80" count="8" type="stmt"/>
-        <line num="81" count="8" type="stmt"/>
-        <line num="82" count="8" type="stmt"/>
-        <line num="83" count="8" type="cond" truecount="1" falsecount="0"/>
-        <line num="84" count="8" type="stmt"/>
-        <line num="85" count="8" type="stmt"/>
-        <line num="86" count="8" type="cond" truecount="1" falsecount="0"/>
-        <line num="87" count="8" type="stmt"/>
-        <line num="93" count="8" type="stmt"/>
-        <line num="96" count="8" type="stmt"/>
-        <line num="97" count="1" type="stmt"/>
+        <line num="69" count="9" type="stmt"/>
+        <line num="70" count="9" type="stmt"/>
+        <line num="72" count="9" type="stmt"/>
+        <line num="73" count="9" type="stmt"/>
+        <line num="75" count="9" type="stmt"/>
+        <line num="76" count="7" type="stmt"/>
+        <line num="79" count="9" type="stmt"/>
+        <line num="80" count="9" type="stmt"/>
+        <line num="81" count="9" type="stmt"/>
+        <line num="82" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="83" count="9" type="stmt"/>
+        <line num="84" count="9" type="stmt"/>
+        <line num="85" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="86" count="9" type="stmt"/>
+        <line num="92" count="9" type="stmt"/>
+        <line num="95" count="9" type="stmt"/>
+        <line num="96" count="1" type="stmt"/>
+        <line num="98" count="1" type="stmt"/>
         <line num="99" count="1" type="stmt"/>
-        <line num="100" count="1" type="stmt"/>
-        <line num="103" count="0" type="stmt"/>
-        <line num="104" count="0" type="stmt"/>
-        <line num="108" count="8" type="stmt"/>
-        <line num="109" count="8" type="stmt"/>
-        <line num="111" count="8" type="stmt"/>
-        <line num="112" count="8" type="stmt"/>
-        <line num="113" count="8" type="stmt"/>
-        <line num="114" count="8" type="stmt"/>
-        <line num="116" count="8" type="stmt"/>
-        <line num="117" count="3" type="stmt"/>
-        <line num="118" count="3" type="stmt"/>
-        <line num="119" count="3" type="stmt"/>
-        <line num="122" count="8" type="cond" truecount="2" falsecount="0"/>
-        <line num="125" count="8" type="stmt"/>
-        <line num="128" count="8" type="stmt"/>
-        <line num="129" count="5" type="stmt"/>
-        <line num="130" count="0" type="stmt"/>
-        <line num="134" count="5" type="stmt"/>
-        <line num="138" count="8" type="stmt"/>
-        <line num="139" count="8" type="stmt"/>
-        <line num="147" count="8" type="stmt"/>
-        <line num="148" count="8" type="stmt"/>
-        <line num="151" count="8" type="stmt"/>
-        <line num="230" count="1" type="stmt"/>
+        <line num="107" count="9" type="stmt"/>
+        <line num="108" count="9" type="stmt"/>
+        <line num="110" count="9" type="stmt"/>
+        <line num="111" count="9" type="stmt"/>
+        <line num="112" count="9" type="stmt"/>
+        <line num="113" count="9" type="stmt"/>
+        <line num="115" count="9" type="stmt"/>
+        <line num="116" count="1" type="stmt"/>
+        <line num="117" count="1" type="stmt"/>
+        <line num="120" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="122" count="9" type="stmt"/>
+        <line num="125" count="9" type="stmt"/>
+        <line num="126" count="6" type="stmt"/>
+        <line num="127" count="1" type="stmt"/>
+        <line num="131" count="6" type="stmt"/>
+        <line num="135" count="9" type="stmt"/>
+        <line num="136" count="9" type="stmt"/>
+        <line num="144" count="9" type="stmt"/>
+        <line num="145" count="9" type="stmt"/>
+        <line num="148" count="9" type="stmt"/>
+        <line num="229" count="1" type="stmt"/>
       </file>
     </package>
     <package name="Notif">
-      <metrics statements="7" coveredstatements="7" conditionals="26" coveredconditionals="13" methods="2" coveredmethods="2"/>
+      <metrics statements="7" coveredstatements="7" conditionals="22" coveredconditionals="22" methods="2" coveredmethods="2"/>
       <file name="Notif.tsx" path="C:\Users\ALEXANDRA\Documents\GitHub\HidroWeb_2024A\hidroweb\src\componentes\Notif\Notif.tsx">
-        <metrics statements="7" coveredstatements="7" conditionals="26" coveredconditionals="13" methods="2" coveredmethods="2"/>
+        <metrics statements="7" coveredstatements="7" conditionals="22" coveredconditionals="22" methods="2" coveredmethods="2"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
-        <line num="9" count="2" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="65" count="1" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
       </file>
     </package>
     <package name="ProtectedRoute">

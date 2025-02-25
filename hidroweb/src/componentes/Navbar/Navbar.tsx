@@ -98,10 +98,10 @@ const Navbar: React.FC = () => {
                 console.log("User signed out.");
                 navigate("/login");
             })
-            .catch((error) => {
-                console.error("Error signing out: ", error);
-                alert("Hubo un error al cerrar sesión. Por favor, inténtalo de nuevo.");
-            });
+            // .catch((error) => {
+            //     console.error("Error signing out: ", error);
+            //     alert("Hubo un error al cerrar sesión. Por favor, inténtalo de nuevo.");
+            // });
     };
 
     const handleProfile = () => navigate("/app/profile");

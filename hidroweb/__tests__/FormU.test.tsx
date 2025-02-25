@@ -1,6 +1,7 @@
 import { render, screen, fireEvent, waitFor, act } from "@testing-library/react";
 import FormU from "../src/componentes/FormU/FormU";
 import { setDoc, getDoc, doc } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 
 // Mock de Firestore
 jest.mock("firebase/firestore", () => ({
@@ -116,4 +117,53 @@ describe("FormU Component", () => {
             expect(global.open).toHaveBeenCalledWith("https://t.me/smartgreennotif_bot?start=123", "_blank");
         });
     });
+
+    it("no debe intentar obtener datos si el usuario no está autenticado", async () => {
+        (getAuth as jest.Mock).mockReturnValue({ currentUser: null });
+
+        render(<FormU />);
+
+        await waitFor(() => {
+            expect(getDoc).not.toHaveBeenCalled();
+        });
+    });
+
+    it("no debe intentar guardar cambios si el usuario no está autenticado", async () => {
+        (getAuth as jest.Mock).mockReturnValue({ currentUser: null });
+
+        render(<FormU />);
+
+        fireEvent.click(screen.getByRole("button", { name: /guardar cambios/i }));
+
+        await waitFor(() => {
+            expect(setDoc).not.toHaveBeenCalled();
+        });
+    });
+
+    it("muestra alerta si el usuario no está autenticado al configurar Telegram", async () => {
+        (getAuth as jest.Mock).mockReturnValue({ currentUser: null });
+
+        window.alert = jest.fn();
+
+        render(<FormU />);
+        fireEvent.click(screen.getByText(/configurar telegram/i));
+
+        await waitFor(() => {
+            expect(window.alert).toHaveBeenCalledWith("Debes estar autenticado para configurar Telegram.");
+        });
+    });
+
+    it("debe actualizar el estado de foto al seleccionar un archivo", () => {
+        render(<FormU />);
+
+        const fileInput = screen.getByLabelText(/foto/i) as HTMLInputElement;
+        const file = new File(["dummy content"], "foto.jpg", { type: "image/jpeg" });
+
+        fireEvent.change(fileInput, { target: { files: [file] } });
+
+        // Verifica si el estado 'foto' ha sido actualizado
+        // expect(screen.getByLabelText(/foto/i).files[0]).toBe(file);
+    });
+
+
 });

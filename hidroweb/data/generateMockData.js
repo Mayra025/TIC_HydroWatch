@@ -14,14 +14,16 @@ const generateMockData = () => {
 
   return {
     sensorId: "sensor123",
-    cultivoId: "C0shMFvYlmB5hJ5GE47l",
-    userId: "TOe84ZegpXZhj2sV4GnqXWqSKEs1",
+    cultivoId: "0raF77dr97gDOEK1KSSR",
+    userId: "bffCUNu77yRTufg0GCAM1XyA8nD3",
     dateTime: formattedDateTime, // dateTime como cadena en formato "YYYY-MM-DD HH:mm:ss"
-    temperature: parseFloat((Math.random() * 10 + 20).toFixed(2)), // temperatura como número
-    // waterLevel: parseFloat((Math.random() * 20 + 30).toFixed(2)), // nivel de agua como número
-    waterLevel: Math.random() < 0.5 ? 0 : 1, // nivel de agua como número
+    // temperature: parseFloat((Math.random() * 10 + 20).toFixed(2)), // temperatura como número 
+    // waterLevel: Math.random() < 0.5 ? 0 : 1, // nivel de agua como número 
+    // pH: parseFloat((Math.random() * 2 + 5).toFixed(2)), // pH como número 
 
-    pH: parseFloat((Math.random() * 2 + 5).toFixed(2)), // pH como número
+    temperature: parseFloat((Math.random() * 2 + 20).toFixed(2)), // Temperatura entre 20 y 22
+    waterLevel: 1, // Nivel de agua fijo en 1
+    pH: parseFloat((Math.random() * 0.2 + 5.9).toFixed(2)) // pH entre 5.9 y 6.1
   };
 };
 

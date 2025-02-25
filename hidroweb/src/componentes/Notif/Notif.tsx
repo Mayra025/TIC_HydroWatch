@@ -19,7 +19,7 @@ const Notif = () => {
               padding={4}
               boxShadow="lg"
               borderRadius={15}
-              bg={alert.color === "red.500" ? "red.50" : alert.color === "green.500" ? "green.50" : "yellow.50"}
+              // bg={alert.color === "red.500" ? "red.50" : alert.color === "green.500" ? "green.50" : "yellow.50"}
             >
               <Stack divider={<StackDivider />} spacing={4}>
                 <Heading size="xs" textTransform="uppercase" color={alert.color}>

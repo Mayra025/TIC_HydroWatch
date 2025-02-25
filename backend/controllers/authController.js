@@ -27,7 +27,6 @@ const signOn = async (req, res) => {
             email,
             password,
             displayName: `${name}`,
-            // displayName: `${name} ${lastname}`,
 
         });
 
@@ -36,7 +35,6 @@ const signOn = async (req, res) => {
             userId: userCredential.uid,
 
             nombre: name,
-            // apellido: lastname,
             correo: email,
         });
 

@@ -139,17 +139,17 @@ const HistoricalChartForm: React.FC<FormProps> = ({
       <Tippy
         content={
           <div style={{ textAlign: 'left', maxWidth: '400px' }}>
-            <strong>🔍 ¡Los datos se procesan según el período que eliges!</strong>
+            <strong>🔍 ¡La gráfica muestra datos que se procesan según el período que eliges!</strong>
             <br />
             <ul>
               <li>- <em>Si eliges un día:</em> Los datos se procesan por hora. Necesitamos al menos 24 mediciones
-                (¡un día completo!) para ver una tendencia.</li>
+                (un día completo) para ver una tendencia.</li>
               <br />
               <li>- <em>De 2 a 7 días:</em> El procesamiento será por intervalos de varios días. Esto te ayudará a
-                comparar varios días entre sí y encontrar patrones o problemas recurrentes.</li>
+                comparar varios días entre sí y encontrar patrones.</li>
               <br />
               <li>- <em>Más de 7 días:</em> Se hará un procesamiento histórico, ideal para ver las tendencias a largo
-                plazo. Con 168 mediciones (¡al menos una semana!), podremos darte un panorama completo.</li>
+                plazo. Con 168 mediciones (al menos una semana), podremos darte un panorama completo.</li>
             </ul>
           </div>
         }

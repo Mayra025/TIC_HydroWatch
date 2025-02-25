@@ -1,4 +1,4 @@
-import { render, screen, } from "@testing-library/react";
+import { fireEvent, render, screen, waitFor, } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import FormC from "../src/componentes/FormC/FormC";
 import { ChakraProvider } from "@chakra-ui/react";
@@ -17,6 +17,8 @@ jest.mock("firebase/firestore", () => ({
         id: "testCultivoId",
     })),
     setDoc: jest.fn(),
+    // setDoc: jest.fn().mockResolvedValue(undefined), // Asegura que devuelva una promesa resuelta
+
 }));
 
 describe("FormC Component", () => {
@@ -102,4 +104,51 @@ describe("FormC Component", () => {
         const fechaInput = screen.getByLabelText(/Fecha de Siembra/i);
         expect(fechaInput).toBeInTheDocument();
     });
+
+    it("Actualiza los requerimientos cuando cambia la variedad o fase", async () => {
+        render(
+            <ChakraProvider>
+                <FormC
+                    isOpen={true}
+                    onClose={mockOnClose}
+                    crop={null}
+                    isCreating={true}
+                    onSave={mockOnSave}
+                />
+            </ChakraProvider>
+        );
+
+        const variedadSelect = screen.getByRole("combobox", { name: /variedad de la especie/i });
+        fireEvent.change(variedadSelect, { target: { value: "Butterhead" } });
+
+        const faseSelect = screen.getByRole("combobox", { name: /fase de crecimiento/i });
+        fireEvent.change(faseSelect, { target: { value: "Crecimiento" } });
+
+        await waitFor(() => {
+            expect(screen.getByText(/pH Óptimo/i)).toBeInTheDocument();
+            expect(screen.getByText(/Temperatura Óptima/i)).toBeInTheDocument();
+            expect(screen.getByText(/Nivel de Agua/i)).toBeInTheDocument();
+        });
+    });
+
+    it("Cierra el formulario al hacer clic en el botón de cerrar", () => {
+        render(
+            <ChakraProvider>
+                <FormC
+                    isOpen={true}
+                    onClose={mockOnClose}
+                    crop={null}
+                    isCreating={true}
+                    onSave={mockOnSave}
+                />
+            </ChakraProvider>
+        );
+
+        const closeButton = screen.getByRole("button", { name: /close/i });
+        fireEvent.click(closeButton);
+
+        expect(mockOnClose).toHaveBeenCalled();
+    });
+
+
 });

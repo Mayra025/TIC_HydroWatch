@@ -73,4 +73,56 @@ describe("Notif Component", () => {
         // Verificar que no se renderizan alertas
         expect(screen.queryByText(/Cultivo:/i)).not.toBeInTheDocument();
     });
+
+    it("Maneja correctamente alertas sin datos completos", () => {
+        const activeAlerts = [
+            {
+                cultivoId: "2",
+                especie: null,
+                variedad: null,
+                color: "green.500",
+                requerimientos: {}, // Sin requerimientos
+                currentTemp: null,
+                currentPh: null,
+                currentWaterLevel: null,
+                error: true,
+            },
+        ];
+    
+        (useAlerts as jest.Mock).mockReturnValue({ activeAlerts });
+    
+        render(
+            <ChakraProvider>
+                <Notif />
+            </ChakraProvider>
+        );
+    
+        expect(screen.getByText(/Cultivo: Desconocido - Variedad no especificada/i)).toBeInTheDocument();
+      
+        expect(
+            screen.getByText((_content, element) => {
+              const text = element?.textContent?.replace(/\s+/g, " ").trim();
+              return text === "Temperatura requerida: N/A°C - N/A°C";
+            })
+          ).toBeInTheDocument();
+          
+       
+        expect(
+            screen.getByText((_content, element) => {
+              const text = element?.textContent?.replace(/\s+/g, " ").trim();
+              return text === "pH requerido: N\/A - N\/A";
+            })
+          ).toBeInTheDocument();
+          
+    
+        
+        expect(
+            screen.getByText((_content, element) => {
+              const text = element?.textContent?.replace(/\s+/g, " ").trim();
+              return text === "Nivel de agua requerido: N\/A";
+            })
+          ).toBeInTheDocument();
+        expect(screen.getByText(/Error: Los datos no se han actualizado/i)).toBeInTheDocument();
+    });
+    
 });

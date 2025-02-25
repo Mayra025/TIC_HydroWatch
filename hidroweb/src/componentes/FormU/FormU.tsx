@@ -23,7 +23,7 @@ const FormU: React.FC = () => {
     const [telegramUserId, setTelegramUserId] = useState("");
     const [fotoURL, setFotoURL] = useState<string | null>(null);
     const [foto, setFoto] = useState<File | null>(null);
-    const [_uid, setUid] = useState<string | null>(null);
+    const [uid, setUid] = useState<string | null>(null);
 
     const auth = getAuth();
     const firestore = getFirestore();
@@ -151,6 +151,20 @@ const FormU: React.FC = () => {
                                 type="text"
                                 value={nombre}
                                 onChange={(e) => setNombre(e.target.value)}
+                            />
+                        </FormControl>
+                    </GridItem>
+                    <GridItem>
+                        <FormControl id="uid" >
+                            <FormLabel>ID Usuario</FormLabel>
+                            <Input
+                                type="text"
+                                isReadOnly
+
+                                value={uid || ""}
+                                onChange={(e) => setUid(e.target.value)}
+                                backgroundColor={"gray.400"}
+
                             />
                         </FormControl>
                     </GridItem>

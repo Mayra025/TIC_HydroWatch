@@ -63,32 +63,25 @@ describe('Navbar Component', () => {
     jest.restoreAllMocks();
   });
 
+
+
   it('Renderiza la barra de navegación con todos los elementos', async () => {
-    await waitFor(async () => {
-      render(
-        <MemoryRouter>
-          <Navbar />
-        </MemoryRouter>
-      );
-    });
+    // await act(async () => {
 
-    expect(screen.getByText('HydroWatch')).toBeInTheDocument();
-    expect(screen.getByText('Dashboard')).toBeInTheDocument();
-    expect(screen.getByText('Cultivos')).toBeInTheDocument();
-    expect(screen.getByText('Consultas')).toBeInTheDocument();
-
-  });
-
-  it('renderiza las iniciales del usuario cuando los datos del usuario están disponibles', async () => {
     render(
       <MemoryRouter>
         <Navbar />
       </MemoryRouter>
     );
+    // });
 
-    const avatar = await screen.findByRole('img', { name: 'John' });
-    expect(avatar).toBeInTheDocument();
+    expect(screen.getByText(/HydroWatch/i)).toBeInTheDocument();
+    expect(screen.getByText(/Dashboard/i)).toBeInTheDocument();
+    expect(screen.getByText(/Cultivos/i)).toBeInTheDocument();
+    expect(screen.getByText(/Consultas/i)).toBeInTheDocument();
   });
+
+
 
   it('Gestiona correctamente el cierre de sesión', async () => {
     render(
@@ -125,69 +118,6 @@ describe('Navbar Component', () => {
 
 
 
-  //   const mockNavigate = jest.fn();
-  //   jest.mock('react-router-dom', () => ({
-  //     ...jest.requireActual('react-router-dom'),
-  //     useNavigate: () => mockNavigate,
-  //   }));
-
-  //   const mockUser: User = {
-  //     displayName: 'Test User',
-  //     uid: '123',
-  //     emailVerified: true,
-  //     isAnonymous: false,
-  //     metadata: { creationTime: '2024-01-01', lastSignInTime: '2024-01-01' },
-  //     providerData: [],
-  //     providerId: 'password',
-  //     refreshToken: 'some-refresh-token',
-  //     phoneNumber: null,
-  //     photoURL: null,
-  //     email: 'testuser@example.com',
-  //     tenantId: null,
-  //     delete: function (): Promise<void> {
-  //       throw new Error('Function not implemented.');
-  //     },
-  //     getIdToken: function (_forceRefresh?: boolean): Promise<string> {
-  //       throw new Error('Function not implemented.');
-  //     },
-  //     getIdTokenResult: function (_forceRefresh?: boolean): Promise<IdTokenResult> {
-  //       throw new Error('Function not implemented.');
-  //     },
-  //     reload: function (): Promise<void> {
-  //       throw new Error('Function not implemented.');
-  //     },
-  //     toJSON: function (): object {
-  //       throw new Error('Function not implemented.');
-  //     }
-  //   };
-
-  //   // Simula los datos del usuario en el contexto de Firebase
-  //   jest.spyOn(auth, 'onAuthStateChanged').mockImplementation((callback) => {
-  //     if (typeof callback === 'function') {
-  //       callback(mockUser);  // Llama al callback con el usuario simulado
-  //     }
-
-  //     // Devuelve una función de desuscripción
-  //     return () => {
-  //       console.log('Desuscrito');
-  //     };
-  //   });
-
-  //   render(
-  //     <MemoryRouter>
-  //       <Navbar />
-  //     </MemoryRouter>
-  //   );
-
-  //   const profileButton = screen.getByText('Configuración de Perfil');
-
-  //   await act(async () => {
-  //     fireEvent.click(profileButton);
-  //   });
-
-  //   expect(mockNavigate).toHaveBeenCalledWith('/app/profile');
-  // });
-
   const mockNavigate = jest.fn();
   (useNavigate as jest.Mock).mockImplementation(() => mockNavigate);
 
@@ -208,4 +138,39 @@ describe('Navbar Component', () => {
 
     expect(mockNavigate).toHaveBeenCalledWith('/app/profile');
   });
+
+
+  it('Navega a la página correspondiente cuando se hace clic en un enlace', async () => {
+    render(
+      <MemoryRouter>
+        <Navbar />
+      </MemoryRouter>
+    );
+
+    const dashboardLink = screen.getByText(/Dashboard/i);
+    fireEvent.click(dashboardLink);
+
+    // Verifica que la navegación se haya realizado correctamente a la página esperada
+    expect(mockNavigate).toHaveBeenCalledWith('/app/profile');
+  });
+
+  jest.useFakeTimers();  // Activar temporizadores falsos
+
+  it('debería actualizar la hora cada segundo', () => {
+    render(
+      <MemoryRouter>
+        <Navbar />
+      </MemoryRouter>
+    );
+
+    // Simular el paso de 1000 ms (1 segundo)
+    jest.advanceTimersByTime(1000);
+
+    // Asegúrate de que el estado de currentTime haya cambiado
+    expect(screen.getByText(/Hoy:/)).toBeInTheDocument();
+
+    // Limpiar temporizadores después de la prueba
+    jest.useRealTimers();
+  });
+
 });

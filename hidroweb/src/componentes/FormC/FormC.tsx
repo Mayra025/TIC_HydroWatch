@@ -186,6 +186,7 @@ const FormC: React.FC<FormCProps> = ({ isOpen, onClose, crop, isCreating, onSave
     const [fase, setFase] = useState<string>(isCreating ? "" : crop?.fase || "");
     const [fechaSiembra, setFechaSiembra] = useState<string>(isCreating ? "" : crop?.fechaSiembra || "");
     const [fotoVariedad, setFotoVariedad] = useState<string>(imagenesVariedades[variedad] || "");
+    const [uid, setUid] = useState<string | null>(null);
 
     useEffect(() => {
         setFotoVariedad(imagenesVariedades[variedad] || "");
@@ -202,6 +203,8 @@ const FormC: React.FC<FormCProps> = ({ isOpen, onClose, crop, isCreating, onSave
         if (isOpen) {
             if (isCreating) {
                 setEspecie("Lechuga");
+                setUid("************");
+
                 setVariedad("");
                 setFase("");
                 setFechaSiembra("");
@@ -216,7 +219,7 @@ const FormC: React.FC<FormCProps> = ({ isOpen, onClose, crop, isCreating, onSave
                 setVariedad(crop.variedad || "");
                 setFase(crop.fase || "");
                 setFechaSiembra(crop.fechaSiembra || "");
-
+                setUid(crop.id);
                 const req = requerimientosNutricionales[crop.variedad]?.[crop.fase] || {
                     ph: { min: 0, max: 0 },
                     temperatura: { min: 0, max: 0 },
@@ -298,9 +301,14 @@ const FormC: React.FC<FormCProps> = ({ isOpen, onClose, crop, isCreating, onSave
                             </Heading>
 
                             <Grid templateColumns="repeat(2, 1fr)" gap={6}>
-                                <GridItem colSpan={2}>
+                                <GridItem colSpan={1}>
                                     <FormControl id="especie">
                                         <Text><b>Especie de planta: </b> {especie}</Text>
+                                    </FormControl>
+                                </GridItem>
+                                <GridItem colSpan={1}>
+                                    <FormControl id="uid">
+                                        <Text><b>ID Cultivo: </b> {uid}</Text>
                                     </FormControl>
                                 </GridItem>
                                 <GridItem colSpan={1}>
@@ -522,6 +530,7 @@ const FormC: React.FC<FormCProps> = ({ isOpen, onClose, crop, isCreating, onSave
                     </ModalBody>
                     <ModalFooter>
                         <Button
+                            data-testid="boton-cambios"
                             colorScheme="blue"
                             onClick={handleSaveChanges}
                             isDisabled={!variedad || !fase || !fechaSiembra}

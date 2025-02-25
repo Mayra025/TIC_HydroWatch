@@ -30,9 +30,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>13/26</span>
+                <span class='fraction'>22/22</span>
             </div>
         
             
@@ -128,7 +128,8 @@
 <a name='L63'></a><a href='#L63'>63</a>
 <a name='L64'></a><a href='#L64'>64</a>
 <a name='L65'></a><a href='#L65'>65</a>
-<a name='L66'></a><a href='#L66'>66</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -136,13 +137,14 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -214,34 +216,35 @@ const Notif = () =&gt; {
               padding={4}
               boxShadow="lg"
               borderRadius={15}
-              bg={alert.color === "red.500" ? "red.50" : <span class="branch-1 cbranch-no" title="branch not covered" >alert.color === "green.500" ? "green.50" : "yellow.50"}</span>
+              // bg={alert.color === "red.500" ? "red.50" : alert.color === "green.500" ? "green.50" : "yellow.50"}
             &gt;
               &lt;Stack divider={&lt;StackDivider /&gt;} spacing={4}&gt;
                 &lt;Heading size="xs" textTransform="uppercase" color={alert.color}&gt;
-                  {`Cultivo: ${alert.especie || <span class="branch-1 cbranch-no" title="branch not covered" >"Desconocido"}</span> - ${alert.variedad || <span class="branch-1 cbranch-no" title="branch not covered" >"Variedad no especificada"}</span>`}
+                  {`Cultivo: ${alert.especie || "Desconocido"} - ${alert.variedad || "Variedad no especificada"} (${alert.fase})`}
                 &lt;/Heading&gt;
+                fds
                 &lt;Text fontSize="sm"&gt;
                   &lt;strong&gt;Temperatura requerida:&lt;/strong&gt;{" "}
-                  {alert.requerimientos?.temperatura?.min ?? <span class="branch-1 cbranch-no" title="branch not covered" >"N/A"}</span>°C -{" "}
-                  {alert.requerimientos?.temperatura?.max ?? <span class="branch-1 cbranch-no" title="branch not covered" >"N/A"}</span>°C
+                  {alert.requerimientos?.temperatura?.min ?? "N/A"}°C -{" "}
+                  {alert.requerimientos?.temperatura?.max ?? "N/A"}°C
                 &lt;/Text&gt;
                 &lt;Text fontSize="sm"&gt;
                   &lt;strong&gt;pH requerido:&lt;/strong&gt;{" "}
-                  {alert.requerimientos?.ph?.min ?? <span class="branch-1 cbranch-no" title="branch not covered" >"N/A"}</span> - {alert.requerimientos?.ph?.max ?? <span class="branch-1 cbranch-no" title="branch not covered" >"N/A"}</span>
+                  {alert.requerimientos?.ph?.min ?? "N/A"} - {alert.requerimientos?.ph?.max ?? "N/A"}
                 &lt;/Text&gt;
                 &lt;Text fontSize="sm"&gt;
-                  &lt;strong&gt;Nivel de agua requerido:&lt;/strong&gt; {alert.requerimientos?.nivelAgua ?? <span class="branch-1 cbranch-no" title="branch not covered" >"N/A"}</span>
+                  &lt;strong&gt;Nivel de agua requerido:&lt;/strong&gt; {alert.requerimientos?.nivelAgua ?? "N/A"}
                 &lt;/Text&gt;
                 &lt;Text fontSize="sm"&gt;
                   &lt;strong&gt;Temperatura actual:&lt;/strong&gt;{" "}
-                  {alert.currentTemp !== null ? `${alert.currentTemp}°C` : <span class="branch-1 cbranch-no" title="branch not covered" >"N/A"}</span>
+                  {alert.currentTemp !== null ? `${alert.currentTemp}°C` : "N/A"}
                 &lt;/Text&gt;
                 &lt;Text fontSize="sm"&gt;
-                  &lt;strong&gt;pH actual:&lt;/strong&gt; {alert.currentPh !== null ? alert.currentPh : <span class="branch-1 cbranch-no" title="branch not covered" >"N/A"}</span>
+                  &lt;strong&gt;pH actual:&lt;/strong&gt; {alert.currentPh !== null ? alert.currentPh : "N/A"}
                 &lt;/Text&gt;
                 &lt;Text fontSize="sm"&gt;
                   &lt;strong&gt;Nivel de agua actual:&lt;/strong&gt;{" "}
-                  {alert.currentWaterLevel !== null ? `${alert.currentWaterLevel}%` : <span class="branch-1 cbranch-no" title="branch not covered" >"N/A"}</span>
+                  {alert.currentWaterLevel !== null ? `${alert.currentWaterLevel}%` : "N/A"}
                 &lt;/Text&gt;
                 {alert.error &amp;&amp; (
                   &lt;Text fontSize="sm" color="red.500"&gt;
@@ -265,7 +268,7 @@ export default Notif;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-01-20T05:28:12.153Z
+                at 2025-02-23T05:35:17.562Z
             </div>
         <script src="../prettify.js"></script>
         <script>

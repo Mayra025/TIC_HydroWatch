@@ -47,10 +47,17 @@ const FiveDayClimate = () => {
                 throw new Error(`Error HTTP: ${response.status}`);
             }
             const data = await response.json();
+            // setForecastData(data);
+            // setLoading(false);
+            // Verifica que la respuesta tenga datos válidos
+            if (!data.list || data.list.length === 0) {
+                throw new Error('Respuesta vacía de la API');
+            }
+
             setForecastData(data);
             setLoading(false);
         } catch (error: any) {
-            console.error('Error fetching the forecast data', error);
+            // console.error('Error fetching the forecast data', error);
             setError('Error al obtener los datos del pronóstico');
             setLoading(false);
         }
@@ -65,14 +72,19 @@ const FiveDayClimate = () => {
         return <p>{error}</p>;
     }
 
-    if (!forecastData) {
-        return <p>No se pudieron cargar los datos del pronóstico.</p>;
-    }
+    // if (!forecastData) {
+    //     return <p>No se pudieron cargar los datos del pronóstico.</p>;
+    // }
+
+    // const dailyForecasts = forecastData.list.filter((reading) =>
+    //     reading.dt_txt.includes('12:00:00')
+    // ).slice(0, 5); // Solo mostrar los próximos 5 días
+
 
     // Filtrar para mostrar los 5 días siguientes a partir de mañana
-    const dailyForecasts = forecastData.list.filter((reading) =>
+    const dailyForecasts = forecastData?.list.filter((reading) =>
         reading.dt_txt.includes('12:00:00')
-    ).slice(0, 5); // Solo mostrar los próximos 5 días
+    ).slice(0, 5) || []; // Solo mostrar los próximos 5 días
 
     const settings = {
         speed: 500,
