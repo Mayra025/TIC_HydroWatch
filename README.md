@@ -5,9 +5,9 @@
 ## Características principales
 
 - 📊 **Monitoreo en tiempo real**: Visualización de datos de sensores para un control eficiente del entorno del cultivo.
-- 🔔 **Notificaciones automáticas**: Envío de alertas vía Telegram cuando los parámetros del cultivo se desvían de los valores óptimos.
-- 📅 **Gestión de cultivos**: Registro y actualización de información sobre especies, variedades y fases de crecimiento.
 - 📈 **Análisis histórico**: Consulta de datos anteriores para la toma de decisiones basada en tendencias.
+- 📅 **Gestión de cultivos**: Registro y actualización de información sobre especies, variedades y fases de crecimiento.
+- 🔔 **Notificaciones automáticas**: Envío de alertas vía Telegram cuando los parámetros del cultivo se desvían de los valores óptimos.
 
 ## Tecnologías utilizadas
 
@@ -17,9 +17,7 @@
 - **Autenticación**: Firebase Authentication.
 - **Notificaciones**: Telegram Bot API.
 
-## ¿Cómo empezar?
-
-## Backend
+## ¿Cómo empezar? Backend
 
 1. **Navegar al directorio del backend**:
    ```sh
