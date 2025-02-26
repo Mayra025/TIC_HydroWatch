@@ -1,6 +1,6 @@
 # HydroWatch
 
-**HydroWatch** es una aplicaicón web diseñada para el monitoreo de cultivos hidropónicos en sistemas NFT (Nutrient Film Technique). Su objetivo es facilitar el seguimiento en tiempo real de parámetros críticos como temperatura, pH y nivel de agua. Además, la aplicación proporciona consultas históricas, alertas automáticas y notificaciones a dispositivos móviles a través de Telegram para facilitar la toma de decisiones informadas sobre los cultivos.
+**HydroWatch** es una aplicación web diseñada para el monitoreo de cultivos hidropónicos en sistemas NFT (Nutrient Film Technique). Su objetivo es facilitar el seguimiento en tiempo real de parámetros críticos como temperatura, pH y nivel de agua. Además, la aplicación proporciona consultas históricas, alertas automáticas y notificaciones a dispositivos móviles a través de Telegram para facilitar la toma de decisiones informadas sobre los cultivos.
 
 ## Características principales
 
